@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <a href="table.html"></a>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      picture img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>About Me</h1>
+      <p>
+        Hello! I am a passionate individual with a deep love for technology and
+        creativity. I believe in the power of storytelling through media and how
+        it can impact lives. Below is a visual representation that captures the
+        essence of who I am.
+      </p>
+
+      <picture>
+        <!-- For mobile devices -->
+        <source media="(max-width: 600px)" srcset="mobile-image.jpg" />
+        <!-- For tablets -->
+        <source
+          media="(min-width: 601px) and (max-width: 1024px)"
+          srcset="tablet-image.jpg"
+        />
+        <!-- For laptops and larger screens -->
+        <source media="(min-width: 1025px)" srcset="laptop-image.jpg" />
+        <!-- Fallback image -->
+        <img src="fallback-image.jpg" alt="A representation of me" />
+      </picture>
+
+      <p>
+        The image above showcases my journey through the world of technology,
+        where every step has been a learning experience. I am continuously
+        driven by my curiosity and a desire to create meaningful solutions that
+        make a difference.
+      </p>
+
+      <audio controls>
+        <source src="audio-message.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <p>
+        The audio clip is a brief message about what motivates me and why I am
+        passionate about what I do. Feel free to listen and get to know me
+        better!
+      </p>
+
+      <video controls width="100%">
+        <source src="video-message.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+
+      <p>
+        The video above is a short introduction to my professional journey,
+        highlighting my skills and experiences.
+      </p>
+    </div>
+  </body>
+</html>
