@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - AltSchool</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 15px;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .scroll-top {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: none;
+      }
+
+      .scroll-top:hover {
+        background: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>About Me</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">About Me</a>
+      <a href="form.html">Application Form</a>
+    </nav>
+
+    <section id="about">
+      <h2>Biography</h2>
+      <p>
+        Hello, I am Ojebowa Olamilekan Precious, a dedicated student currently
+        enrolled in the AltSchool Africa School of Engineering program. My
+        ALTSCHOOL ID is ALT/SOE/024/0835. I joined AltSchool because I am
+        passionate about technology and engineering and I believe AltSchool
+        provides the best platform to enhance my skills and achieve my dreams.
+      </p>
+      <p>
+        My goal in the School of Engineering program is to gain comprehensive
+        knowledge in software development and engineering principles. I aim to
+        become a proficient software engineer, capable of solving complex
+        problems and contributing positively to the tech industry.
+      </p>
+    </section>
+
+    <a href="#about" class="scroll-top" id="scrollTop">Scroll to Top</a>
+
+    <footer>
+      <p>© 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Show the "Scroll to Top" button when scrolling down
+      const scrollTopButton = document.getElementById("scrollTop");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
